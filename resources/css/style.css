@@ -2,34 +2,78 @@ html {
     font-size: 16px;
 }
 
-header {
-    padding-top: 130px;
-    background-image:url("/resources/photos/headerbackground.jpeg");
-    padding-bottom: 25px;
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 3rem;
+    background-color:#fcfcfc;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
+nav h1 {
+    color: #252954;
     font-family: Rosario;
-    color: #DD7B3F;
-    font-size: 4rem;
-    text-align: center;
-}
-
-#jobtitle {
-    font-family: Rosario;
-    color: #DD7B3F;
     font-size: 2.5rem;
-    text-align: center;
+}
+
+nav a {
+    color:#252954;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: #d6eaf2;
+    border-bottom: 2px solid #d6eaf2;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    gap: 1.9rem;
+}
+
+nav ul li {
+    font-family: Rosario;
+    font-size: 1.5rem;  
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+    margin: auto;
+}
+
+.hero img {
+    width: 30rem;
+}
+
+.bio {
+    width: 36rem;
 }
 
 h2 {
     font-family: Rosario;
-    color: #033b31;
+    color: #252954;
     font-size: 2rem;
 }
 
-.about-me {
+#about {
     text-align: center;
+    color: #252954;
+    padding-top: 2.5rem;
 }
 
 p {
@@ -39,44 +83,57 @@ p {
     padding-right: 40px;
 }
 
-.projects {
+#skills {
     text-align: center;
+    color: #252954;
+    padding-top: 4rem;
 }
 
-footer {
-    padding-top: 20px;
-    background:rgba(221, 123, 63, .5);
-    padding-bottom: 25px;
+.skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    max-width: 68.75rem;
+    margin: auto;
 }
 
-#contactinfo {
-    font-family: Rosario;
-    color: #033b31;
-    font-size: 2rem;
+.skills-header {
+    margin-bottom: 1rem;
+}
+
+.skills-wrapper img {
+    padding: 2rem;
+}
+
+.icon {
+    width: 5rem;
+    height: 5rem;
+}
+
+#projects {
     text-align: center;
+    color: #252954;
+    padding-top: 4rem;
 }
 
-ul {
+#contact {
     text-align: center;
+    color: #252954;
+    padding-top: 4rem;
 }
 
-li {
-    font-family: "Shippori Mincho";
-    font-size: 1.3rem;
-    padding: 5px 45px 5px 0px;
-    display: inline-block;
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    max-width: 68.75rem;
+    margin: auto;
+    padding: 2rem;
 }
 
-a {
-    color: #033b31;
+.socials img {
+    width: 10rem;
+    height: 10rem;
 }
-
-a:link {
-    text-decoration: none;
-}
-
-a:hover {
-    font-weight: bold;
-}
-
-
