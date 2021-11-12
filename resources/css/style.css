@@ -3,8 +3,13 @@ html {
 }
 
 @media screen and (max-width: 768px) {
+    body {
+        width: 32rem;
+    }
+    
     nav {
         padding: 0 0.5rem;
+        width: 100%;
     }
 
     nav ul {
@@ -17,27 +22,28 @@ html {
     }
 
     .hero {
-        width: 8rem;
+        width: 32rem;
         margin-top: 4rem;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
         gap: 0;
     }
     .hero img {
-        width: 8rem;
-        padding-bottom: 2rem;
+        width: 75%;
+        padding-bottom: 1rem;
     }
 
     .bio {
-        margin-top: -7rem;
-        width: 8rem;
+        width: 75%;
     }
 
     #skills {
-        padding: 2rem 0;
+        padding: 1rem 0;
     }
 
     .skills {
-        width: 12rem;
+        width: 8rem;
     }
     
     .icon {
@@ -54,23 +60,31 @@ html {
     }
 
     .project-container {
-        width: 12rem;
+        width: 8rem;
     }
 }
 
 @media screen and (max-width: 420px) {
+    body {
+        width: 24rem;
+    }
+
+    nav {
+        padding: 0 0.5rem;
+        width: 100%;
+    }
+    
     .hero img {
-        width: 8rem;
-        padding-bottom: 2rem;
+        width: 75%;
+        padding-bottom: 1rem;
     }
 
     .bio {
-        margin-top: -7rem;
-        width: 8rem;
+        width: 75%;
     }
 
     .project-container {
-        width: 8rem;
+        width: 75%;
     }
 
     .socials {
