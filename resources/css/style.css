@@ -20,29 +20,8 @@ html {
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     }
 
-    .nav-menu.active {
-        left: 0;
-    }
-
     nav ul li {
         margin: 2.5rem 0;
-    }
-
-    .burger-menu {
-        display: block;
-        cursor: pointer;
-    }
-
-    .burger-menu.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .burger-menu.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .burger-menu.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
     }
 
     .hero {
@@ -88,10 +67,12 @@ html {
 
 @media screen and (max-width: 420px) {
     .hero img {
-        width: 8rem; 
+        width: 8rem;
+        padding-bottom: 2rem;
     }
 
     .bio {
+        margin-top: -7rem;
         width: 8rem;
     }
 
@@ -148,25 +129,6 @@ nav ul {
 nav ul li {
     font-family: Rosario;
     font-size: 1.5rem;  
-}
-
-.burger-menu {
-    color: #252954;
-    font-size: 1.5rem;
-    border: 0;
-    background-color: transparent;
-    cursor: pointer;
-    display: none;
-}
-
-.bar {
-    display: block;
-    width: 24px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: #fcfcfc;
 }
 
 .hero {
