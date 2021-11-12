@@ -4,10 +4,10 @@ html {
 
 @media screen and (max-width: 800px) {
     nav {
-        padding: 1.5rem 1rem;
+        padding: 1rem 0.5rem;
     }
     .hero {
-        margin-top: 5rem;
+        margin-top: 4rem;
         flex-direction: column;
         gap: 0;
     }
@@ -21,6 +21,10 @@ html {
         width: 12rem;
     }
 
+    #skills {
+        padding: 2rem 0;
+    }
+
     .skills {
         width: 12rem;
     }
@@ -28,6 +32,10 @@ html {
     .icon {
         width: 2rem;
         height: 2rem;
+    }
+
+    #projects {
+        padding: 2rem 0;
     }
 
     .projects-container {
@@ -50,6 +58,11 @@ html {
 
     .project-container {
         width: 8rem;
+    }
+
+    .socials {
+        flex-direction: column;
+        gap: 0;
     }
 }
 
@@ -140,8 +153,6 @@ h2 {
 #about p {
     font-family: "Shippori Mincho";
     font-size: 1.25rem;
-    padding-left: 40px;
-    padding-right: 40px;
 }
 
 #skills {
