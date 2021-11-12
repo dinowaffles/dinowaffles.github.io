@@ -15,4 +15,4 @@ navLink.forEach(n => n.addEventListener("click", closeMenu));
 function closeMenu() {
     burgerMenu.classList.remove("active");
     navMenu.classList.remove("active");
-}; //-->
+}; */
