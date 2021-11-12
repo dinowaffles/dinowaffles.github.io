@@ -2,6 +2,57 @@ html {
     font-size: 16px;
 }
 
+@media screen and (max-width: 800px) {
+    nav {
+        padding: 1.5rem 1rem;
+    }
+    .hero {
+        margin-top: 5rem;
+        flex-direction: column;
+        gap: 0;
+    }
+    .hero img {
+        width: 16rem;
+        padding-bottom: 2rem;
+    }
+
+    .bio {
+        margin-top: -7rem;
+        width: 12rem;
+    }
+
+    .skills {
+        width: 12rem;
+    }
+    
+    .icon {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .projects-container {
+        flex-direction: column;
+    }
+
+    .project-container {
+        width: 12rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .hero img {
+        width: 8rem; 
+    }
+
+    .bio {
+        width: 8rem;
+    }
+
+    .project-container {
+        width: 8rem;
+    }
+}
+
 nav {
     position: sticky;
     top: 0;
@@ -45,6 +96,15 @@ nav ul {
 nav ul li {
     font-family: Rosario;
     font-size: 1.5rem;  
+}
+
+.burger-menu {
+    color: #252954;
+    font-size: 1.5rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
 }
 
 .hero {
@@ -175,4 +235,12 @@ h2 {
 .socials img {
     width: 10rem;
     height: 10rem;
+}
+
+footer {
+    background-color:#fcfcfc;
+    font-family: "Shippori Mincho";
+    padding: 1.25rem;
+    text-align: center;
+    margin: 0;
 }
