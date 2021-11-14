@@ -2,97 +2,6 @@ html {
     font-size: 16px;
 }
 
-@media screen and (max-width: 768px) {
-    body {
-        width: 32rem;
-    }
-    
-    nav {
-        padding: 0 0.5rem;
-        width: 100%;
-    }
-
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    nav ul li {
-        font-size: 1rem;  
-    }
-
-    .hero {
-        width: 32rem;
-        margin-top: 4rem;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 0;
-    }
-    .hero img {
-        width: 75%;
-        padding-bottom: 1rem;
-    }
-
-    .bio {
-        width: 75%;
-    }
-
-    #skills {
-        padding: 1rem 0;
-    }
-
-    .skills {
-        width: 8rem;
-    }
-    
-    .icon {
-        width: 2rem;
-        height: 2rem;
-    }
-
-    #projects {
-        padding: 2rem 0;
-    }
-
-    .projects-container {
-        flex-direction: column;
-    }
-
-    .project-container {
-        width: 8rem;
-    }
-}
-
-@media screen and (max-width: 380px) {
-    body {
-        width: 24rem;
-    }
-
-    nav {
-        padding: 0 0.5rem;
-        width: 100%;
-    }
-    
-    .hero img {
-        width: 75%;
-        padding-bottom: 1rem;
-    }
-
-    .bio {
-        width: 75%;
-    }
-
-    .project-container {
-        width: 75%;
-    }
-
-    .socials {
-        flex-direction: column;
-        gap: 0;
-    }
-}
-
 nav {
     position: sticky;
     top: 0;
@@ -144,7 +53,7 @@ nav ul li {
     justify-content: center;
     gap: 2.5rem;
     max-width: 68.75rem;
-    margin: auto;
+    margin: 0 auto;
     padding-bottom: 4rem;
 }
 
@@ -153,7 +62,8 @@ nav ul li {
 }
 
 .bio {
-    width: 36rem;
+    width: 30rem;
+    text-align: center;
 }
 
 h2 {
@@ -272,4 +182,108 @@ footer {
     padding: 1.25rem;
     text-align: center;
     margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        max-width: 768px;
+        overflow-x: hidden;
+    }
+    
+    nav {
+        padding: 0 0.5rem;
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        font-size: 1rem;  
+    }
+
+    .hero {
+        width: 100%;
+        margin-top: 4rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    .hero img {
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+
+    .bio {
+        width: 100%;
+        display: block;
+        box-sizing: border-box;
+    }
+
+    #skills {
+        padding: 1rem 0;
+    }
+
+    .skills {
+        width: 8rem;
+    }
+    
+    .icon {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    #projects {
+        padding: 2rem 0;
+    }
+
+    .projects-container {
+        flex-direction: column;
+    }
+
+    .project-container {
+        width: 8rem;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    body {
+        max-width: 380px;
+        margin: 0 auto;
+        overflow-x: hidden;
+    }
+
+    nav {
+        padding: 0 0.5rem;
+        width: 100%;
+    }
+    
+    .hero img {
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+
+    .hero {
+        width: 100%;
+        box-sizing: border-box; 
+        float: none;
+    }
+
+    .bio {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .project-container {
+        width: 75%;
+    }
+
+    .socials {
+        flex-direction: column;
+        gap: 0;
+    }
 }
